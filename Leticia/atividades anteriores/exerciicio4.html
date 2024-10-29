@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="exerciicio4.css" />
+    <title>Formulario de Cadastro</title>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="cadastro">
+            <h2>Criar Conta</h2>
+            <p>Já é um membro? <a href="#"> Login </a></p>
+            <form>
+                <div class="input">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" placeholder="Digite o seu nome completo" required />
+                </div>
+
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Digite o seu email" required />
+                </div>
+
+                <div class="input">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" placeholder="Digite o seu telefone" required />
+                </div>
+
+                <!-- Adição do campo de endereço -->
+                <div class="input">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" placeholder="Digite o seu endereço" required />
+                </div>
+
+                <div class="input">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Digite sua senha" required />
+                </div>
+
+                <div class="input">
+                    <label for="Confirmarsenha">Confirmar Senha</label>
+                    <input type="password" placeholder="Confirme a senha" required />
+                </div>
+
+                <!-- Alteração do texto do botão para "Registrar-se" -->
+                <div class="input">
+                    <button type="submit">Registrar-se</button>
+                </div>
+
+                <!-- Adição do botão "Cancelar" -->
+                <div class="input">
+                    <button type="button">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

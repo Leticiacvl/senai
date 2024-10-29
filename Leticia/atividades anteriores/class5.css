@@ -1,0 +1,44 @@
+/* cor de fundo azul claro */
+.bg-light-blue {
+    background-color: lightblue;
+}
+
+/* cor de fundo verde claro */
+.bg-light-green {
+    background-color: lightgreen;
+}
+
+/* colocar uma imagem de fundo que permita a repetição em qualquer estilo e que não acompanhe o deslocamento da página */
+.bg-repeating-fixed {
+    background-image: url('logosenai.png');
+    /* substitui pelo caminho da sua imagem */
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* colocar uma imagem de fundo e repeti-la na vertical */
+.bg-repeating-vertical {
+    background-image: url('logosenai.png');
+    background-repeat: repeat-y;
+}
+
+/* colocar uma imagem de fundo e não repeti-la */
+.bg-no-repeat {
+    background-image: url('logosenai.png');
+    background-repeat: no-repeat;
+}
+
+/* colocar uma imagem de fundo sem repeti-la e centralizada */
+.bg-center-no-repeat {
+    background-image: url('logosenai.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* formatar o fundo de uma página na cor amarela, uma figura de fundo, sem repetição, centralizada e que acompanhe o deslocamento da página */
+.bg-yellow-image {
+    background-color: yellow;
+    background-image: url('logosenai.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

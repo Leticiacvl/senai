@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    /* centraliza */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.piramide {
+    position: relative;
+    /* permite posicionamento absoluto dos níveis */
+    width: 500px;
+    /* largura total */
+    height: 500px;
+    /* altura total */
+}
+
+.nivel {
+    position: absolute;
+    /* permite posicionar cada nível em relação à pirâmide */
+    border: 2px solid #333;
+    /* borda */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* sombra para profundidade */
+    left: 50%;
+    /* centro horizontal */
+    top: 50%;
+    /* centro vertical */
+    transform: translate(-50%, -50%);
+    /* centraliza em relação ao centro da pirâmide */
+    display: flex;
+    /* centralizar conteúdo interno */
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Cores e tamanhos diferentes para cada nível da pirâmide */
+.nivel:nth-child(1) {
+    background-color: #1dcaff;
+    width: 50px;
+    height: 50px;
+    z-index: 8;
+    /* Camada superior */
+}
+
+.nivel:nth-child(2) {
+    background-color: #36b3c9;
+    width: 100px;
+    height: 100px;
+    z-index: 7;
+    /* Camada abaixo do nível 1 */
+}
+
+.nivel:nth-child(3) {
+    background-color: #4481a5;
+    width: 150px;
+    height: 150px;
+    z-index: 6;
+    /* Camada abaixo do nível 2 */
+}
+
+.nivel:nth-child(4) {
+    background-color: #6c90dd;
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+    /* Camada abaixo do nível 3 */
+}
+
+.nivel:nth-child(5) {
+    background-color: #5957d8;
+    width: 250px;
+    height: 250px;
+    z-index: 4;
+    /* Camada abaixo do nível 4 */
+}
+
+.nivel:nth-child(6) {
+    background-color: #3743e7;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    /* Camada abaixo do nível 5 */
+}
+
+.nivel:nth-child(7) {
+    background-color: #230bff;
+    width: 350px;
+    height: 350px;
+    z-index: 2;
+    /* Camada abaixo do nível 6 */
+}
+
+.nivel:nth-child(8) {
+    background-color: #6b2fcc;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    /* Camada mais baixa */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}

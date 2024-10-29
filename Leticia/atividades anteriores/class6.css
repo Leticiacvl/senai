@@ -1,0 +1,28 @@
+/* tipo de letra arial e cor vermelha */
+#font-arial-red {
+    font-family: Arial, sans-serif;
+    color: red;
+}
+
+/* tipo de letra times, com tamanho 22 e na cor verde */
+#font-times-green {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: green;
+}
+
+/* tipo de letra comic sans, com tamanho 20, na cor azul e estilo italico */
+#font-comic-blue-italic {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+}
+
+/* formatar a fonte de uma pagina na cor amarela, em negrito, de tamanho 14, com espessura media e tipo de letra verdana */
+#font-verdana-yellow-bold {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: yellow;
+    font-weight: bold;
+}

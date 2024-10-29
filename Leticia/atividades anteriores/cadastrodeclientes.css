@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('foto.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(187, 187, 187, 0.8);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.telefone-container {
+    display: flex;
+    gap: 10px;
+}
+
+input.ddd {
+    width: 60px;
+}
+
+input.telefone {
+    flex: 1;
+}
+
+.radio-container {
+    margin: 10px 0;
+}
+
+.radio-container label {
+    margin-right: 10px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00a99d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #007b70;
+}

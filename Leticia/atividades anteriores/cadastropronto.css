@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("imagemm.jpg");
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.thank-you-container {
+    text-align: center;
+    /* Garante que o texto dentro da div esteja centralizado */
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 36px;
+    /* Tamanho do texto */
+}
+
+p {
+    font-size: 24px;
+    /* Tamanho do texto */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #909dac;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #043263;
+    transform: scale(1.05);
+}

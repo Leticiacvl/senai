@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espaçamento entre os itens */
+}
+
+.top-menu span {
+    cursor: default;
+    /* Para indicar que não é clicável */
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #444;
+    padding: 20px;
+    height: 100vh;
+    /* altura total da janela */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    /* ocupa a largura total */
+    padding: 10px;
+}
+
+.menu a:hover {
+   
+    border-radius: 5px;
+}

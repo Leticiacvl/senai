@@ -1,0 +1,32 @@
+.tela_letreiro{
+    width: 100%; /* largura da tela */
+    position:absolute; /* posicionando o letreiro */
+    top:45%; /* alinhando na tela */
+    left:50%; 
+    transform: translate(-50%);
+    width: 900px; /* largura do letreiro */
+    border: 2px solid rgb(0, 0, 0); /* borda */
+}
+
+.letreiro{
+    animation: texto 8s linear 3 reverse;
+    background-color: rgb(171, 252, 252);
+    width: 180px; /* largura */
+    font-size: xx-large;
+    padding: 10px; /* espaçamento ao redor do texto */
+    text-align: center;
+}
+
+@keyframes texto{
+    0%{
+        transform: translateX(0%); /* inicio da animaçao e na posiçao original */
+    }
+
+    50%{
+        transform: translateX(700px); /* meio, e desliza pra direita */
+    }
+
+    0%{
+        transform: translateX(0%); /* final e volta pra posiçao original */
+    }
+}

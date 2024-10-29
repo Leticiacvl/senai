@@ -1,0 +1,12 @@
+.external {
+    color: yellow;
+    /* Cor da fonte */
+    font-weight: 900;
+    /* Espessura da fonte */
+    font-style: italic;
+    /* Estilo itálico */
+    font-family: Arial;
+    /* Tipo de fonte */
+    background-color: green;
+    /* Cor de fundo */
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="stylesheet" href="fotos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('fotoaa.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        .menu-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .menu-button {
+            cursor: pointer;
+            background-color: #00a99d;
+            color: white;
+            border: none;
+            padding: 20px 35px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1000;
+            margin-top: 5px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu li {
+            list-style: none;
+            padding: 15px 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .menu li:hover {
+            background-color: #bde6f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 60px 20px;
+            /* Espaçamento para o cabeçalho */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gallery-image {
+            width: 200px;
+            /* Ajuste conforme necessário */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00a99d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #007b70;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        <ul class="menu" id="dropdownMenu">
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastrodeclientes.html">Cadastro</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+            <li><a href="youtube.html">Youtube</a></li>
+            <li><a href="github.html">Github</a></li>
+            <li><a href="quemsoueu.html">Quem sou eu</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Galeria de Fotos</h1>
+        <div class="gallery">
+            <img src="flor.jpg" alt="Foto 1" class="gallery-image">
+            <img src="flor2.jpg" alt="Foto 2" class="gallery-image">
+            <img src="flor3.jpg" alt="Foto 3" class="gallery-image">
+
+</body>
+
+</html>

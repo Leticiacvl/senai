@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3b3939;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border: 2px solid #9997b4;
+            /* Bordas brancas */
+            border-radius: 5px;
+            /* Arredondamento das bordas */
+        }
+
+        .sub-list {
+            margin-left: 20px;
+            /* Indentação para subtópicos */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Tarefas</h1>
+    <ul>
+        <li>1. Fechar contrato</li>
+        <li>2. Análise de sistema
+            <ul class="sub-list">
+                <li>1. Avaliação da empresa
+                    <ul class="sub-list">
+                        <li>1. Entrevista com funcionários</li>
+                        <li>2. Pesquisa de documentação da empresa</li>
+                    </ul>
+                </li>
+                <li>2. Programação</li>
+                <li>3. Aprovação do projeto</li>
+            </ul>
+        </li>
+        <li>3. Treinamento dos usuários</li>
+    </ul>
+</body>
+
+</html>

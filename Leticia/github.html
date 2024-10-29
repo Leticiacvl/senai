@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu GitHub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fotoaa.jpg');
+            background-size: cover;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .menu-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .menu-button {
+            cursor: pointer;
+            background-color: #00a99d;
+            color: white;
+            border: none;
+            padding: 20px 35px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1000;
+            margin-top: 5px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu li {
+            list-style: none;
+            padding: 15px 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .menu li:hover {
+            background-color: #bde6f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .video-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            border: 5px solid #00a99d;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        iframe {
+            width: 600px;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        document.addEventListener('click', function (event) {
+            const menu = document.getElementById('dropdownMenu');
+            const button = document.querySelector('.menu-button');
+            if (!button.contains(event.target) && !menu.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        <ul class="menu" id="dropdownMenu">
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastrodeclientes.html">Cadastro</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+            <li><a href="youtube.html">Youtube</a></li>
+            <li><a href="github.html">Github</a></li>
+            <li><a href="quemsoueu.html">Quem sou eu</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="video-container">
+            <h1>Meu GitHub</h1>
+            <iframe src="https://github.com/Leticiacvl" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    /* Para colapsar as bordas */
+    width: 100%;
+    /* Largura da tabela */
+}
+
+th,
+td {
+    border: 1px solid #333;
+    /* Borda das células */
+    padding: 8px;
+    /* Espaçamento interno */
+    text-align: left;
+    /* Alinhamento do texto */
+}
+
+th {
+    background-color: #f0f0f0;
+    /* Cor do cabeçalho */
+}
+
+.nested-table {
+    border: none;
+    /* Remove bordas da tabela aninhada */
+    width: auto;
+    /* Ajusta a largura da tabela aninhada */
+}
